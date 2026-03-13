@@ -1,0 +1,39 @@
+{
+  "solution": {
+    "name": "spfx-html-viewer-client-side-solution",
+    "id": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "QEA AISO",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "HTML Page Viewer - Opens HTML pages from document libraries in full view"
+      },
+      "longDescription": {
+        "default": "SPFx web part that renders a configurable text link. On click, opens an HTML page from a SharePoint document library in a new browser tab with full-page rendering. Supports dynamic configuration per page instance."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "HTML Page Viewer Feature",
+        "description": "Deploys the HTML Page Viewer web part",
+        "id": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-html-viewer.sppkg"
+  }
+}

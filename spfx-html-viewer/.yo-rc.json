@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.18.2",
+    "libraryName": "spfx-html-viewer",
+    "libraryId": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-html-viewer",
+    "solutionShortDescription": "HTML Page Viewer Web Part",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "HtmlPageViewer"
+  }
+}

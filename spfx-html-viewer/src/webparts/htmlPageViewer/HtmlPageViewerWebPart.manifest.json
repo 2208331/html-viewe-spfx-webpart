@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "b7e3f2a1-c4d5-4e6f-8a9b-0c1d2e3f4a5b",
+  "alias": "HtmlPageViewerWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Other" },
+      "title": { "default": "HTML Page Viewer" },
+      "description": { "default": "Displays a configurable link that opens an HTML page from a SharePoint document library in a new browser tab with full-page rendering." },
+      "officeFabricIconFontName": "PageLink",
+      "properties": {
+        "linkText": "View Report",
+        "htmlFileUrl": "",
+        "imagesFolderUrl": "",
+        "resourcesFolderUrl": ""
+      }
+    }
+  ]
+}

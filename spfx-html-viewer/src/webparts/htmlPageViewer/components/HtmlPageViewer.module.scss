@@ -1,0 +1,119 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.htmlPageViewer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 16px;
+
+  /* ── Placeholder (unconfigured) ─────────────────────────────────── */
+
+  .placeholder {
+    text-align: center;
+    padding: 32px 24px;
+    background-color: "[theme:neutralLighterAlt, default: #faf9f8]";
+    border: 2px dashed "[theme:neutralTertiaryAlt, default: #c8c6c4]";
+    border-radius: 8px;
+    color: "[theme:neutralSecondary, default: #605e5c]";
+  }
+
+  .placeholderIcon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+
+  .placeholderText {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+
+  .placeholderHint {
+    font-size: 0.85rem;
+    color: "[theme:neutralTertiary, default: #8a8886]";
+    margin: 0;
+  }
+
+  /* ── Configured link ────────────────────────────────────────────── */
+
+  .pageLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: "[theme:neutralLighterAlt, default: #faf9f8]";
+    border: 1px solid "[theme:neutralLight, default: #edebe9]";
+    border-radius: 6px;
+    text-decoration: none;
+    color: "[theme:themePrimary, default: #0078d4]";
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      background-color: "[theme:neutralLighter, default: #f3f2f1]";
+      border-color: "[theme:themePrimary, default: #0078d4]";
+      color: "[theme:themeDarkAlt, default: #106ebe]";
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0, 120, 212, 0.15);
+    }
+
+    &:active {
+      background-color: "[theme:neutralLight, default: #edebe9]";
+    }
+  }
+
+  .linkIcon {
+    font-size: 1.2rem;
+  }
+
+  .linkText {
+    display: inline;
+  }
+
+  .externalIcon {
+    font-size: 0.8rem;
+    opacity: 0.55;
+    margin-left: 2px;
+  }
+
+  /* ── Loading bar ────────────────────────────────────────────────── */
+
+  .loadingBar {
+    margin-top: 8px;
+    height: 3px;
+    background-color: "[theme:neutralLight, default: #edebe9]";
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .loadingProgress {
+    height: 100%;
+    width: 30%;
+    background-color: "[theme:themePrimary, default: #0078d4]";
+    border-radius: 2px;
+    animation: loadSlide 1.2s ease-in-out infinite;
+  }
+
+  /* ── Error message ──────────────────────────────────────────────── */
+
+  .errorMessage {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #fde7e9;
+    color: #a80000;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+}
+
+/* keyframes live at the top level in CSS modules */
+@keyframes loadSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}

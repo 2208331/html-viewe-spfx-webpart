@@ -1,0 +1,6 @@
+{
+  "workingDir": "./release/assets/",
+  "account": "<!-- STORAGE ACCOUNT NAME -->",
+  "container": "spfx-html-viewer",
+  "accessKey": "<!-- ACCESS KEY -->"
+}
